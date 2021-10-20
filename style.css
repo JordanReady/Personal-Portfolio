@@ -1,10 +1,17 @@
 /*--- Navbar ---*/
+nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+}
 .navbar {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .logo {
     color: #2060e0 !important;
+    font-weight: bold;
+    margin-right: 30px !important;
 }
 
 .nav-link:hover {
@@ -15,3 +22,27 @@
     background-color: #2060e0;
 }
 
+/*--- Hero ---*/
+.hero-img {
+    background-image: url(/images/setup.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(11, 8, 39, 0.8);
+    background-blend-mode: multiply;
+}
+
+.name {
+    font-size: 75px;
+    color: #ffffff80;
+    text-align: center;
+}
+
+.description {
+    font-size: 30px;
+    color: #ffffff80;
+    padding-top: 25px;
+}
+
+.hero-accent {
+    color: #2060e0;
+}
