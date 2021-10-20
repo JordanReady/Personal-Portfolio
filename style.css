@@ -1,3 +1,7 @@
+/*--- Utility ---*/
+html {
+    scroll-behavior: smooth !important;
+}
 /*--- Navbar ---*/
 nav {
     position: fixed !important;
@@ -16,6 +20,7 @@ nav {
 
 .nav-link:hover {
     color: #2060e0 !important;
+    transition-duration: .4s;
 }
 
 .navbar-toggler-icon{
@@ -29,6 +34,7 @@ nav {
     background-size: cover;
     background-color: rgba(11, 8, 39, 0.8);
     background-blend-mode: multiply;
+    background-attachment: fixed;
 }
 
 .name {
@@ -45,4 +51,91 @@ nav {
 
 .hero-accent {
     color: #2060e0;
+}
+/*--- About ---*/
+.test {
+    height: 350px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.background-1 {
+    background-color: #000000ee
+}
+
+#about {
+    color: #ffffff80;
+}
+
+#about li {
+    font-size: 25px;
+    padding: 12px 0;
+    list-style: none;
+}
+
+#about h1 {
+    font-size: 55px;
+    text-align: center;
+    border-bottom: #2060e0 solid 1px;
+}
+
+#about p {
+    font-size: 25px;
+    text-align: left;
+}
+
+.li-title {
+    color: #2060e0;
+}
+
+.interests {
+    color: #ffffff80;
+    text-align: center !important;
+    font-size: 35px;
+}
+
+.icon-row {
+    padding: 5px 25px;
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.icon {
+    height: 85px;
+    width: 85px;
+    background-color: #2060e0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #000000ee;
+}
+
+.icon:hover {
+    border: black solid 3px;
+}
+
+@media (max-width:768px) {
+    #about ul {
+        padding-left: 0;
+    }
+    .interests {
+        text-align: left !important;
+        max-width: 540px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .icon-row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
