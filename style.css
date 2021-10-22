@@ -12,6 +12,7 @@ nav {
     position: fixed !important;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 .navbar {
     background-color: rgba(0, 0, 0, 0.75);
@@ -58,17 +59,18 @@ nav {
     color: var(--accent-color);
 }
 /*--- About ---*/
-.test {
+.about-img {
     height: 350px;
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .background-1 {
-    background-color: #000000ee
+    background-color: #000000ee;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #about {
@@ -99,7 +101,9 @@ nav {
 .interests {
     color: var(--main-color);
     text-align: center !important;
-    font-size: 35px;
+    font-size: 45px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .icon-row {
@@ -122,6 +126,18 @@ nav {
     border: 2px solid #000000ee;
 }
 
+.icon-1 {
+    background-position: 40% 35%;
+}
+
+.icon-3 {
+    background-position: 45% 15%;
+}
+
+.icon-4 {
+    background-position: 50% 9%;
+}
+
 .icon:hover {
     border: black solid 3px;
 }
@@ -138,9 +154,50 @@ nav {
         padding-left: 15px;
         margin-right: auto;
         margin-left: auto;
+        font-size: 35px !important;
+        text-align: center !important;
     }
     .icon-row {
         padding-left: 15px;
         padding-right: 15px;
     }
+}
+/*--- Projects ---*/
+.background-2 {
+    background-color: rgba(0, 0, 0, 0.897);
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#projects {
+    color: var(--main-color);
+}
+
+#projects h1 {
+    font-size: 55px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: var(--accent-color) solid 1px;
+    margin-bottom: 10px;
+}
+
+#projects span {
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.projects-img {
+    height: 350px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .4s, filter .4s ease-in-out;
+    filter: none;
+    transform: scale(.97);
+}
+.projects-img:hover {
+    filter: none;
+    transform: scale(1);
+    border: var(--accent-color) 4px solid;
 }
