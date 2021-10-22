@@ -86,6 +86,8 @@ nav {
 #about h1 {
     font-size: 55px;
     text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     border-bottom: var(--accent-color) solid 1px;
 }
 
@@ -176,9 +178,9 @@ nav {
 #projects h1 {
     font-size: 55px;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
     border-bottom: var(--accent-color) solid 1px;
-    margin-bottom: 10px;
 }
 
 #projects span {
@@ -198,6 +200,102 @@ nav {
 }
 .projects-img:hover {
     filter: none;
-    transform: scale(1);
-    border: var(--accent-color) 4px solid;
+    transform: scale(1.04);
 }
+/*--- Projects ---*/
+.contact-col {
+    margin-top: 10px;
+}
+#contact {
+    color: var(--main-color);
+}
+
+#contact h1 {
+    font-size: 55px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: var(--accent-color) solid 1px;
+    margin-bottom: 10px;
+}
+
+#contact span {
+    text-align: center;
+    color: var(--accent-color);
+}
+
+#contact li {
+    list-style: none;
+}
+
+#contact textarea {
+    margin-top: 6px;
+}
+
+.contact-title {
+    color: var(--accent-color);
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.contact-content {
+    color: var(--main-color);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.submit-btn {
+    margin-top: 16px !important;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(22, 22, 22, 0.788);
+    color: var(--main-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgba(22, 22, 22, 0.788);
+    color: var(--main-color);
+    font-weight: bolder;
+    border: var(--accent-color) solid 2px;
+    transition-duration: .3s;
+  }
+
+  @media(max-width:992px) {
+      .contact-content {
+          margin-bottom: 10px;
+      }
+      #contact ul {
+        padding-left: 5px;
+    }
+  }
+
+  @media(max-width: 768px) {
+    input[type=text] {
+        width: 100% !important;
+    }
+    .submit-btn {
+        width: 100%;
+        margin-top: 7px;
+    }
+    .contact-content {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+  }
