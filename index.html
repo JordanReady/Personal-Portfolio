@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <!--Navbar js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -19,42 +23,39 @@
 <body>
   <!--Navbar-->
   <nav class="navbar navbar-expand-md navbar-dark shadow-lg">
-    <a class="navbar-brand logo" href="#">JR</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse links" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-        </li> 
-        <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-        </li>    
-      </ul>
+      <div class="container nav-btn d-flex justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> 
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>    
+        </ul>
+      </div>
     </div>  
   </nav>
   <!--Hero-->
   <div class="hero-img">
     <div class="container hero d-flex flex-column align-items-center justify-content-center vh-100">
       <h1 class="name">Jordan <span class="hero-accent">Ready</span</h1>
-      <p class="description"> I'm a Web <span class="hero-accent">Developer</span></p>
+      <p class="description">
+        I'm a Web <span class="hero-accent">Developer</span>
+      </p>
+      <a href="https://github.com/JordanReady" class="social" target="_blank"><div class="social"></div>
+      </a>
     </div>
   </div>
   <!--About-->
   <div class="background-1" id="about">
   <div class="container">
     <h1>About <span class="li-title">Me</span></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut rerum distinctio porro reiciendis. Vero quidem, aut facere assumenda rem eos impedit error explicabo, reiciendis saepe velit perferendis laborum sequi!</p>
+    <p>Hello there reader! In case you missed it, up above in big bold letters centered perfectly in the middle of your screen nice and easy for you to read, my name is Jordan Ready. Don't worry though, I've also put it down below just in case you miss it here as well. I am currently studying full stack web development online at Altcademy! I aspire to become a freelance web developer and help a variety of people and companies with any and all web development needs! I have a working knowledge in HTML and CSS and I'm excited to dive deeper into communicating with the beautiful machines we all know and love (and on occasion, can't stand) known as computers!</p>
     <div class="row">
-      <div class="col-12 col-md-4 about-img" style="background-image:url(/images/IMG-1597.PNG);"></div>
-      <div class="col-sm-12 col-md-8">
+      <div class="col-12 col-md-6 about-img"></div>
+      <div class="col-sm-12 col-md-6">
         <ul class="d-flex flex-column align-items-left">
           <li><span class="li-title">Name:</span> Jordan Ready</li>
           <li><span class="li-title">Age:</span> 23</li>
@@ -79,27 +80,27 @@
     <h1>My <span class="">Projects</span></h1>
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4">
-        <a href="#"><div class="projects-img" style="background-image:url(/images/eberhard-grossgasteiger-ZSjTbBFL6Cc-unsplash.jpg);"></div></a>
+        <a href="#projects"><div class="projects-img" style="background-image:url(/images/eberhard-grossgasteiger-ZSjTbBFL6Cc-unsplash.jpg);"></div></a>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut error minus iusto eaque perferendis incidunt esse rerum, consectetur, vel nulla expedita ullam! Maxime velit excepturi et obcaecati unde consequatur amet.</p>
       </div>
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="projects-img" style="background-image:url(/images/nubelson-fernandes-Yh2Y8avvPec-unsplash.jpg);"></div>
+        <a href="#projects"><div class="projects-img" style="background-image:url(/images/nubelson-fernandes-Yh2Y8avvPec-unsplash.jpg);"></div></a>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea vitae natus animi veritatis deleniti eligendi modi, alias, molestiae sit aut magnam numquam reiciendis commodi quibusdam, autem iusto quas necessitatibus. Suscipit?</p>
       </div>
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="projects-img" style="background-image:url(/images/abhipsa-pal-ILra9AOaXOE-unsplash.jpg);"></div>
+        <a href="#projects"><div class="projects-img" style="background-image:url(/images/abhipsa-pal-ILra9AOaXOE-unsplash.jpg);"></div></a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos quisquam vero vel inventore consectetur, praesentium esse tempora dolores velit quia odio voluptatum?</p>
       </div>
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="projects-img" style="background-image:url(/images/jess-bailey-l3N9Q27zULw-unsplash.jpg);"></div>
+        <a href="#projects"><div class="projects-img" style="background-image:url(/images/jess-bailey-l3N9Q27zULw-unsplash.jpg);"></div></a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit vel cupiditate dolore iure nobis error dolorum nisi placeat ea.</p>
       </div>
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="projects-img" style="background-image:url(/images/espolon-tequila-M7E88HjEG08-unsplash.jpg);"></div>
+        <a href="#projects"><div class="projects-img" style="background-image:url(/images/espolon-tequila-M7E88HjEG08-unsplash.jpg);"></div></a>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis beatae consequuntur soluta tenetur similique rem, sint maiores praesentium modi aspernatur deserunt dicta vel repellendus cum. Praesentium, officia soluta. Consequatur voluptatem nulla eos rem dolores.</p>
       </div>
       <div class="col-12 col-md-6 col-lg-4">
-        <div class="projects-img" style="background-image:url(/images/marek-piwnicki-Lb0qphJEZiA-unsplash.jpg);"></div>
+        <a href="#projects"><div class="projects-img" style="background-image:url(/images/marek-piwnicki-Lb0qphJEZiA-unsplash.jpg);"></div></a>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, maiores quia hic fuga voluptas ab totam voluptates nihil! Veniam totam quae assumenda corrupti et placeat voluptate nemo. Velit, totam autem?</p>
       </div>
     </div>

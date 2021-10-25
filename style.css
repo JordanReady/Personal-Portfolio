@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth !important;
 }
 
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 :root {
     --main-color: #ffffff80;
     --accent-color: #2060e0;
@@ -13,25 +17,37 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1;
+    max-height: 56px;
 }
 .navbar {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-.logo {
-    color: var(--accent-color) !important;
-    font-weight: bold;
-    margin-right: 30px !important;
+.nav-link {
+    padding-right: 45px !important;
+    padding-left: 45px !important;
 }
 
 .nav-link:hover {
     color: var(--accent-color) !important;
-    transition-duration: .4s;
+    background-color: rgba(22, 22, 22, 0.788);
+    color: var(--main-color);
+    border: var(--accent-color) solid 2px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .navbar-toggler-icon{
     background-color: var(--accent-color);
+    
 }
+
+@media (max-width:768px) {
+    nav {
+        max-height: none;
+    }
+}
+
 
 /*--- Hero ---*/
 .hero-img {
@@ -58,13 +74,36 @@ nav {
 .hero-accent {
     color: var(--accent-color);
 }
+
+.social {
+    height: 31px;
+    width: 31px;
+    background-color: rgba(0, 0, 0, 0.479);
+    background-image: url(/images/GitHub-Mark-Light-32px.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.social:hover {
+    background-color: var(--accent-color);
+    background-blend-mode: normal;
+    border: var(--accent-color) solid 2px;
+}
 /*--- About ---*/
 .about-img {
     height: 350px;
-    background-color: black;
+    background-image:url(/images/firos-nv-1wBmbnvv4TE-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(11, 8, 39, 0.3);
+    background-blend-mode: multiply;
+    margin-left: 15px;
+    margin-right: -15px;
+    border-radius: 10px;
 }
 
 .background-1 {
@@ -148,6 +187,10 @@ nav {
     #about ul {
         padding-left: 0;
     }
+    .about-img {
+        max-width: 93% !important;
+        margin: 0 auto;
+    }
     .interests {
         text-align: left !important;
         max-width: 540px;
@@ -197,6 +240,7 @@ nav {
     transition: transform .4s, filter .4s ease-in-out;
     filter: none;
     transform: scale(.97);
+    border-radius: 10px;
 }
 .projects-img:hover {
     filter: none;
@@ -221,6 +265,10 @@ nav {
 #contact span {
     text-align: center;
     color: var(--accent-color);
+}
+
+#contact ul {
+    padding-left: 5px;
 }
 
 #contact li {
